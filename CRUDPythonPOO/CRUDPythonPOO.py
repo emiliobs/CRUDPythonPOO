@@ -27,6 +27,16 @@ productDB.updateProductPrice("Smartphone", "3456788")
 productDB.updateProductPrice("Bike", "2500")
 productDB.showProducts()
 
+
+print("=============================")
+print()
+
+print("Delete a Product by Name doesn't Exist.:")
+productDB.deleteProduct('Deletes')
+print()
+productDB.showProducts()
+
+
 print("=============================")
 print()
 
@@ -36,10 +46,4 @@ productDB.deleteProduct("Delete 1")
 print()
 productDB.showProducts()
 
-print("=============================")
-print()
 
-print("Delete a Product by Name doesn't Exist.:")
-productDB.deleteProduct('Deletes')
-print()
-productDB.showProducts()
