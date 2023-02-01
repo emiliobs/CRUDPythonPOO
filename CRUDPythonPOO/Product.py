@@ -1,4 +1,4 @@
-class Porduct:
+class Product:
 	def __init__(self, name, price):
 		self.Name = name
 		self.Price = price
@@ -8,7 +8,7 @@ class Porduct:
 		self.Price = price
 
 
-	def __str__(self): return f"{self.name}: {self.Price}"
+	def __str__(self): return f"{self.Name}: {self.Price}"
 
 
 		 
