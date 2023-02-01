@@ -6,6 +6,8 @@ class Product:
 		
 	def updatePrice(self, price):
 		self.Price = price
+		 
+	
 
 
 	def __str__(self): return f"{self.Name}: {self.Price}"

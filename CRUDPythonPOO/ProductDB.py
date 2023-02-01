@@ -1,7 +1,5 @@
-from Product import Product
-
-
-class ProductDB:
+ 
+class ProductDB():
     def __init__(self):
         self.Products = []
 
@@ -16,16 +14,21 @@ class ProductDB:
 
     def updateProductPrice(self, name, price):
         product = self.getProduct(name)
-        if product:
-            product = Product.updatePrice(price)
+        if product:             
+            product.updatePrice(price)
 
+           
 
     def deleteProduct(self, name):
         product = self.getProduct(name)
         if product:
             self.Products.remove(product)
+        else:
+            print("Sorry! THe product does not Exist!")
+
+
 
     def showProducts(self):
         for product in self.Products:
-             print(product)
+            print(product)
 
