@@ -24,7 +24,7 @@ class ProductDB():
         if product:
             self.Products.remove(product)
         else:
-            print("Sorry! THe product does not Exist!")
+            print("Sorry! The product does not Exist!")
 
 
 
