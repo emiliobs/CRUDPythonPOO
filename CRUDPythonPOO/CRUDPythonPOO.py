@@ -15,23 +15,25 @@ productDB.showProducts()
 print("=============================")
 print()
 
-print("Select a Product by Name:")
+#print("Select a Product by Name:")
 productByName = productDB.getProduct("Laptop Envy")
+print(f"Select a Product by Name: {productByName.Name}")
 print(productByName)
 
 print("=============================")
 print()
 
-print("Update Price of Product by Name:")
+print("Updated Price of Product by Name!")
 productDB.updateProductPrice("Smartphone", "3456788")
 productDB.updateProductPrice("Bike", "2500")
+
 productDB.showProducts()
 
 
 print("=============================")
 print()
 
-print("Delete a Product by Name doesn't Exist.:")
+print("Deleted a Product by Name doesn't Exist!")
 productDB.deleteProduct('Deletes')
 print()
 productDB.showProducts()
@@ -40,7 +42,7 @@ productDB.showProducts()
 print("=============================")
 print()
 
-print("Delete Product by Name:")
+print("Deleted Product by Name!")
 productDB.deleteProduct('Delete')
 productDB.deleteProduct("Delete 1")
 print()
